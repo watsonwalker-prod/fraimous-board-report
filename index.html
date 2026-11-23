@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FRAIMOUS · Board Report · Zero-Ad BFCM 2026</title>
+  <meta name="description" content="Confidential FRAIMOUS board report: Black Friday / Cyber Monday 2026 plan without paid ads, market context, and zero-ad projections." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site">
+    <div class="wrap bar">
+      <a href="#top" aria-label="FRAIMOUS">
+        <img class="wordmark" src="assets/img/wordmark-ink.png" alt="FRAIMOUS" />
+      </a>
+      <nav class="toc" aria-label="Report sections">
+        <a href="#summary">Summary</a>
+        <a href="#market">Market</a>
+        <a href="#plan">Plan</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#projections">Projections</a>
+        <a href="#risks">Risks</a>
+        <a href="#next">Next steps</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <img class="bg" src="assets/img/tigris-room.jpg" alt="Tigris, framed in a room setting" />
+    <div class="veil" aria-hidden="true"></div>
+    <div class="wrap copy">
+      <p class="kicker">Board report · Confidential</p>
+      <h1>A quiet Black Friday, without ads.</h1>
+      <p class="lede">A plan-only briefing for FRAIMOUS. Growth through codes, a free week on the television app, and organic presence — not paid media. Prepared 10 November 2026. Nothing in this report has been launched.</p>
+      <div class="meta">
+        <div>Window<strong>10–30 Nov 2026</strong></div>
+        <div>Weekend<strong>27 &amp; 30 November</strong></div>
+        <div>Ad budget<strong>$0</strong></div>
+        <div>Status<strong>Plan only</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="summary">
+    <div class="wrap">
+      <p class="kicker">01 · Executive summary</p>
+      <h2>What this week can actually be.</h2>
+      <p class="lede">FRAIMOUS starts from zero recorded sales, orders, traffic, and ad spend. Codes on fraimous.com are hard-coded; Stripe coupons are not used. Checkout’s four fixes sit on staging and need a yes to ship, then a QA recheck. Until checkout is in production, a code cannot convert a sale.</p>
+
+      <div class="metrics">
+        <div class="metric emerald">
+          <p class="kicker">Primary estimate</p>
+          <b>$0</b>
+          <p>BFCM-week profit if checkout stays on staging. This is the honest base case.</p>
+        </div>
+        <div class="metric">
+          <p class="kicker">Upside · estimate</p>
+          <b>$0–$297</b>
+          <p>If checkout ships and QA passes by 26 Nov: zero to two discounted 16×20 orders.</p>
+        </div>
+        <div class="metric">
+          <p class="kicker">Site free week</p>
+          <b>Not possible</b>
+          <p>Checkout is one-time payment only. A free week of membership needs a later Stripe subscription build.</p>
+        </div>
+        <div class="metric">
+          <p class="kicker">TV free week</p>
+          <b>Fire TV LAT</b>
+          <p>Free pack or a free-week unlock can live on the app. Samsung still waits on a yes.</p>
+        </div>
+      </div>
+
+      <p class="note">Three lines, plainly: what is doable by BFCM is shipping the four checkout fixes, adding one or two new percent-off codes (if approved), keeping MEMBER25, leaving the Snow Globe code on Snow Globe only, and offering a free week or free pack on Fire TV Live App Testing, plus organic posts. The projected BFCM-week result is $0, with an upside estimate of $0–$297 profit if checkout is live. The blockers are staging-only checkout, no paid ads, Amazon prints on hold, no Etsy shop, an unknown email-list size, and no site subscription with which to give a free week on fraimous.com.</p>
+    </div>
+  </section>
+
+  <section class="section band" id="market">
+    <div class="wrap">
+      <p class="kicker">02 · Last year’s market</p>
+      <h2>Black Friday · Cyber Monday, 2025.</h2>
+      <p>These are sector and platform figures, not FRAIMOUS results. FRAIMOUS had no sales in this window. Where a public number does not exist, this report says so.</p>
+
+      <div class="chart">
+        <p class="kicker">Chart · cited totals</p>
+        <h3>United States Cyber Week scale, 2025</h3>
+        <p class="cap">Adobe Digital Economy Index. Bars are published dollar totals, not estimates. Furniture is Adobe’s closest published home category on Cyber Monday; it is not wall art.</p>
+        <svg class="plot" viewBox="0 0 1000 280" role="img" aria-label="Adobe 2025 Cyber Week spending totals">
+          <rect x="0" y="0" width="1000" height="280" fill="#faf8f4"/>
+          <!-- y grid -->
+          <g stroke="#d8cbbd" stroke-width="1">
+            <line x1="80" y1="40" x2="980" y2="40"/>
+            <line x1="80" y1="100" x2="980" y2="100"/>
+            <line x1="80" y1="160" x2="980" y2="160"/>
+            <line x1="80" y1="220" x2="980" y2="220"/>
+          </g>
+          <g fill="#5e4c3e" font-family="IBM Plex Mono, monospace" font-size="11">
+            <text x="74" y="44" text-anchor="end">$50B</text>
+            <text x="74" y="104" text-anchor="end">$33B</text>
+            <text x="74" y="164" text-anchor="end">$17B</text>
+            <text x="74" y="224" text-anchor="end">$0</text>
+          </g>
+          <!-- 44.2 / 50 * 180 = 159.12, bar from y=220-159=61, h=159 -->
+          <rect x="140" y="61" width="90" height="159" fill="#16382f"/>
+          <text x="185" y="52" text-anchor="middle" font-family="Syne, sans-serif" font-size="13" fill="#1a100c">$44.2B</text>
+          <text x="185" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5e4c3e">CYBER WEEK</text>
+          <!-- 11.8 / 50 * 180 = 42.48, y=220-42=178 -->
+          <rect x="300" y="178" width="90" height="42" fill="#8a5a2e"/>
+          <text x="345" y="170" text-anchor="middle" font-family="Syne, sans-serif" font-size="13" fill="#1a100c">$11.8B</text>
+          <text x="345" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5e4c3e">BLACK FRIDAY</text>
+          <!-- 14.25 / 50 * 180 = 51.3, y=169 -->
+          <rect x="460" y="169" width="90" height="51" fill="#3a281c"/>
+          <text x="505" y="161" text-anchor="middle" font-family="Syne, sans-serif" font-size="13" fill="#1a100c">$14.25B</text>
+          <text x="505" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5e4c3e">CYBER MONDAY</text>
+          <!-- furniture 1.8 / 50 * 180 = 6.48 — too small, show a visible min + label -->
+          <rect x="620" y="208" width="90" height="12" fill="#8a5a2e"/>
+          <text x="665" y="200" text-anchor="middle" font-family="Syne, sans-serif" font-size="13" fill="#1a100c">$1.8B</text>
+          <text x="665" y="248" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5e4c3e">CM FURNITURE</text>
+          <!-- Nov 1-Dec 1 137.4 is off this 50 scale — note, not plotted to same axis -->
+          <text x="820" y="130" text-anchor="middle" font-family="Syne, sans-serif" font-size="22" fill="#16382f">$137.4B</text>
+          <text x="820" y="150" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5e4c3e">NOV 1–DEC 1</text>
+          <text x="820" y="166" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5e4c3e">NOT TO SCALE</text>
+        </svg>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Sector or platform</th>
+              <th>What is public for BFCM / holiday 2025</th>
+              <th>Relevance to FRAIMOUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>U.S. online (Adobe)</td>
+              <td>Black Friday $11.8B (+9.1%); Cyber Monday $14.25B (+7.1%); Cyber Week $44.2B (+7.7%); 1 Nov–1 Dec $137.4B. Holiday season $257.8B (+6.8%). Furniture $1.8B on Cyber Monday (+5.4%), about 19% off; TVs 22% off on Cyber Monday and 24.3% off over the season. Holiday décor +285% versus October, pre-season.</td>
+              <td>Sets the calendar intensity. Adobe’s Cyber Week was about twice average daily spend in the 1 Nov–1 Dec window ($44.2B of $137.4B). This is overall ecommerce, not wall art.</td>
+            </tr>
+            <tr>
+              <td>TVs, Adobe as reported</td>
+              <td>Black Friday TV hardware sales +1,740% versus the average day in October 2025; holiday décor +890% versus that October average; TVs about 24% off on Black Friday. Cited via Chain Store Age and GamesBeat, attributed to Adobe Analytics. Not in the official Cyber Monday or season PDFs.</td>
+              <td>A hardware spike versus a quiet October day — not a year-over-year rate, and not a multiplier for a Frame TV art app that is not yet generally live.</td>
+            </tr>
+            <tr>
+              <td>Salesforce</td>
+              <td>Global Cyber Week $336.6B (+7%); U.S. Cyber Week $79.6B (+5%). U.S. Cyber Monday $13.6B, which differs from Adobe’s $14.25B. Both figures are cited; Adobe is used here for U.S. daily totals.</td>
+              <td>Confirms a mid-single-digit to high-single-digit lift in a mature market.</td>
+            </tr>
+            <tr>
+              <td>Shopify merchants</td>
+              <td>BFCM 2025 GMV $14.6B, +27% (or +24% at constant currency). Average order $114.70. Hottest categories: cosmetics, clothing, activewear, fitness. Home décor is not listed. 2024 comparison: $11.5B.</td>
+              <td>DTC was stronger than the broader web. Shopify’s mix is not an art-and-home sample.</td>
+            </tr>
+            <tr>
+              <td>Etsy</td>
+              <td>Q4 2025 marketplace GMS $3.2929B, +0.1% year over year, −1.0% in constant currency. Home and Living grew year over year; no rate was published. Cyber deals were cited as a helpful program. Internally, 66% of GMS during the 24 Nov–2 Dec 2025 Cyber Specials window came from on-sale listings.</td>
+              <td>Discounted listings carried the week. FRAIMOUS has no Etsy shop, so this is context only.</td>
+            </tr>
+            <tr>
+              <td>Amazon Home Décor / wall art</td>
+              <td>No public 2025 BFCM dollar total for Amazon wall art was found. HIRI / YipitData (BFCM 2024 only): Amazon Décor was more than one third of five home-improvement categories, led by seasonal décor, rugs, and window treatments — not wall art.</td>
+              <td>Amazon prints remain on hold for FRAIMOUS.</td>
+            </tr>
+            <tr>
+              <td>Fire TV, Samsung The Frame, CTV art apps</td>
+              <td>No public 2025 BFCM dollar total was found for TV art apps, Art Store, Frame TV unit sales, or connected-TV art-app spend.</td>
+              <td>The FRAIMOUS Fire TV app is in live testing; Samsung is waiting on a yes. There is no benchmark to scale from.</td>
+            </tr>
+            <tr>
+              <td>Peer brands</td>
+              <td>Desenio Q4 2025 net sales SEK 217.8M (−18.5%); full year SEK 738.2M (−13.6%); Q4 orders −25.1%; Q4 average order SEK 632 (+9%). Framebridge, Society6, Minted, and Artfully Walls have no public BFCM sales totals. “House of Goods” exists as several small shops; none publish BFCM results.</td>
+              <td>Poster and print specialists are not uniformly growing. A discount week does not guarantee a lift for a new brand starting at zero.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cap sources" style="margin-top:12px">Sources are linked in the footnotes at the end of this report. Unverified third-party Amazon décor share figures were omitted.</p>
+    </div>
+  </section>
+
+  <section class="section" id="plan">
+    <div class="wrap">
+      <p class="kicker">03 · Zero-ad plan</p>
+      <h2>Codes, a free week on television, and organic work.</h2>
+      <p>Paid ads stay at zero. Coupons improve conversion of traffic that already exists; they do not replace acquisition. Email-list size and site traffic are unknown, so volume is not invented here.</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <p class="kicker">fraimous.com</p>
+          <h3>Hard-coded codes, one per order</h3>
+          <p>Codes are written into the site. Stripe coupons are not used. <span class="code">MEMBER25</span> remains 25% off a first member purchase on the main site. <span class="code">5N0W84LL3FFCT</span> remains 46% off The Pair (formerly The Set) on Snow Globe only — do not extend it to the main site for BFCM. Proposed, not live: one or two new percent-off codes around 15% for 27–30 November, a small change that still needs a yes. Checkout is one-time payment only, so a free week of membership on the site is not possible by 26 November.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Frame TV app</p>
+          <h3>Where a free week can live</h3>
+          <p>A free pack, or a free-week unlock, fits Fire TV Live App Testing. Pack price is still an unapproved $29 placeholder; the offer is access, not a priced sale. Samsung remains waiting on a yes, and a store review started this late is unlikely to clear by 27 November. A later Stripe subscription would be required if a site-side free week is wanted after BFCM.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Organic</p>
+          <h3>Instagram, Pinterest, TikTok</h3>
+          <p>Post from @definitelystephany and the existing social pack. Draft captions and pins; do not boost. Email and SMS are drafts only until a yes — list size is unknown. A gift with purchase, if used, should be digital (near-zero cost of goods), not a free physical print. Gift cards should not be promised unless the site already supports them; that is more than a small code change.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Held or draft only</p>
+          <h3>Amazon, Etsy, hotels</h3>
+          <p>Amazon prints stay on hold. There is no Etsy plan and no shop. B2B hotel or restaurant outreach can be a one-pager in draft; nothing is sent without a yes. Licensing cycles are slower than a seventeen-day window.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" id="calendar">
+    <div class="wrap">
+      <p class="kicker">04 · Coupon calendar and margins</p>
+      <h2>What each code does to a 16×20.</h2>
+      <p>Unit economics use the November 2026 FRAIMOUS margin tables: Printful cost, shipping, and Stripe at the public U.S. rate of 2.9% + $0.30 (unverified on-account). Planning piece: standard mat 16×20, $250 everyday. One code per order; codes do not stack. Extra-large canvas should be excluded from percent-off codes — a 15% discount on the 40×55 leaves about $40 profit (15.4%); 25% leaves about $10 (4.5%).</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Offer</th>
+              <th>Where / when</th>
+              <th class="num">Retail</th>
+              <th class="num">Profit</th>
+              <th class="num">Margin</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code">—</span></td>
+              <td>Everyday, no code</td>
+              <td>Main site, always</td>
+              <td class="num">$250.00</td>
+              <td class="num">$184.95</td>
+              <td class="num">74.0%</td>
+              <td>Live pricing</td>
+            </tr>
+            <tr>
+              <td><span class="code">MEMBER25</span></td>
+              <td>25% off first member purchase</td>
+              <td>Main site, standing</td>
+              <td class="num">$187.50</td>
+              <td class="num">$124.26</td>
+              <td class="num">66.3%</td>
+              <td>Live. Keep. Mat 16×20 shown; Luster 16×20 is $116.93 / 62.4%.</td>
+            </tr>
+            <tr>
+              <td><span class="code">FRAME15</span></td>
+              <td>15% off one standard work (proposed name)</td>
+              <td>Main site, 27–30 Nov (proposed)</td>
+              <td class="num">$212.50</td>
+              <td class="num">$148.54</td>
+              <td class="num">69.9%</td>
+              <td>Not live. Needs a yes. Do not apply to 40×55 or 40×60 canvas.</td>
+            </tr>
+            <tr>
+              <td><span class="code">5N0W84LL3FFCT</span></td>
+              <td>46% off The Pair</td>
+              <td>Snow Globe only, not the main BFCM offer</td>
+              <td class="num">$270.00</td>
+              <td class="num">$142.15</td>
+              <td class="num">52.6%</td>
+              <td>Live on Snow Globe. Luster 16×20 Pair shown. Gallery 24×36 Pair falls to $114.68 / 32.1%. Do not extend to fraimous.com for BFCM.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="chart">
+        <p class="kicker">Chart · computed from margins</p>
+        <h3>Profit left on a standard 16×20 mat</h3>
+        <p class="cap">Each bar is profit after Printful, shipping, and assumed Stripe. A 15% weekend code leaves more profit than MEMBER25 and does not undercut the member welcome as sharply as 25% off would for everyone.</p>
+        <svg class="plot" viewBox="0 0 1000 260" role="img" aria-label="Profit remaining at each discount">
+          <rect width="1000" height="260" fill="#faf8f4"/>
+          <g stroke="#d8cbbd" stroke-width="1">
+            <line x1="200" y1="36" x2="960" y2="36"/>
+            <line x1="200" y1="96" x2="960" y2="96"/>
+            <line x1="200" y1="156" x2="960" y2="156"/>
+            <line x1="200" y1="216" x2="960" y2="216"/>
+          </g>
+          <g fill="#5e4c3e" font-family="IBM Plex Mono, monospace" font-size="11">
+            <text x="194" y="40" text-anchor="end">$200</text>
+            <text x="194" y="100" text-anchor="end">$133</text>
+            <text x="194" y="160" text-anchor="end">$67</text>
+            <text x="194" y="220" text-anchor="end">$0</text>
+          </g>
+          <!-- scale 200 profit = 180px -->
+          <rect x="230" y="50" width="120" height="166" fill="#16382f"/>
+          <text x="290" y="42" text-anchor="middle" font-family="Syne, sans-serif" font-size="14" fill="#1a100c">$184.95</text>
+          <text x="290" y="246" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5e4c3e">FULL PRICE</text>
+          <rect x="410" y="82" width="120" height="134" fill="#8a5a2e"/>
+          <text x="470" y="74" text-anchor="middle" font-family="Syne, sans-serif" font-size="14" fill="#1a100c">$148.54</text>
+          <text x="470" y="246" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5e4c3e">15% · PROPOSED</text>
+          <rect x="590" y="104" width="120" height="112" fill="#3a281c"/>
+          <text x="650" y="96" text-anchor="middle" font-family="Syne, sans-serif" font-size="14" fill="#1a100c">$124.26</text>
+          <text x="650" y="246" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5e4c3e">MEMBER25</text>
+          <rect x="770" y="88" width="120" height="128" fill="#1f4a3e"/>
+          <text x="830" y="80" text-anchor="middle" font-family="Syne, sans-serif" font-size="14" fill="#1a100c">$142.15</text>
+          <text x="830" y="246" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5e4c3e">46% PAIR 16×20</text>
+        </svg>
+      </div>
+
+      <p class="kicker" style="margin-top:36px">Dated checklist · America/Chicago · 10–30 November 2026</p>
+      <h3 style="margin-bottom:8px">Seventeen days. Nothing ships without a yes.</h3>
+      <ol class="dates">
+        <li>
+          <time datetime="2026-11-10">Tue 10 Nov</time>
+          <div>
+            <h3>Review this plan</h3>
+            <p>Three decisions: ship the four staging checkout fixes; allow one or two new percent-off codes; allow a Fire TV free-week or free-pack in live testing.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-11">Wed 11 Nov</time>
+          <div>
+            <h3>If yes to checkout, approve the production ship</h3>
+            <p>Prepare the QA script. Do not add new codes before checkout is in production and rechecked.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-12">Thu 12 Nov</time>
+          <div>
+            <h3>Ship checkout, only after a yes</h3>
+            <p>Begin the QA recheck the same day if it ships.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-13">Fri 13 Nov</time>
+          <div>
+            <h3>Finish QA on the four fixes</h3>
+            <p>If QA fails, stop. A code cannot rescue a broken checkout over the weekend of the 27th.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-14">Sat 14–Sun 15 Nov</time>
+          <div>
+            <h3>Hard-code approved BFCM code or codes on staging</h3>
+            <p>Stripe coupons are not used. Confirm one code per order, and that MEMBER25 still works and does not stack with the new code.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-16">Mon 16 Nov</time>
+          <div>
+            <h3>Draft, do not send</h3>
+            <p>Email and SMS drafts. Instagram @definitelystephany, Pinterest, and TikTok captions, drawn from the social pack.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-17">Tue 17 Nov</time>
+          <div>
+            <h3>Fire TV free week or free pack, in LAT</h3>
+            <p>Access only. Pack price remains an unapproved placeholder, so do not sell the pack as a priced BFCM IAP.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-18">Wed 18 Nov</time>
+          <div>
+            <h3>Samsung still waits on a yes</h3>
+            <p>If a yes comes this late, store review is unlikely to clear by 27 November. Say so and do not plan Samsung revenue this weekend.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-19">Thu 19 Nov</time>
+          <div>
+            <h3>Gift cards and gift-with-purchase</h3>
+            <p>Do not promise a new gift-card feature by BFCM unless it already exists. If a gift is offered, keep it digital.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-20">Fri 20 Nov</time>
+          <div>
+            <h3>Hotel one-pager, draft only</h3>
+            <p>B2B outreach is not sent without a yes.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-21">Sat 21–Sun 22 Nov</time>
+          <div>
+            <h3>Organic pins and stories, then final QA</h3>
+            <p>Schedule organic work, not paid. Recheck codes and checkout if they are live.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-23">Mon 23 Nov</time>
+          <div>
+            <h3>Optional member note</h3>
+            <p>MEMBER25 already exists. Send only if a list exists and a yes is given. List size is unknown.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-24">Tue 24–Wed 25 Nov</time>
+          <div>
+            <h3>Final checks, a quiet Eve</h3>
+            <p>Optional early reminder of MEMBER25. Do not stack a new code on top of it.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-26">Thu 26 Nov</time>
+          <div>
+            <h3>Thanksgiving</h3>
+            <p>A quiet site. An organic story is enough. Checkout must already be in production if Friday is to convert.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-27">Fri 27 Nov</time>
+          <div>
+            <h3>Black Friday</h3>
+            <p>If approved and checkout is live, the proposed 15% code opens. Organic posts only. One code per order.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-28">Sat 28–Sun 29 Nov</time>
+          <div>
+            <h3>Weekend, same code</h3>
+            <p>Organic only. The proposed code, if approved, stays through Monday unless it is closed earlier.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-30">Mon 30 Nov</time>
+          <div>
+            <h3>Cyber Monday</h3>
+            <p>Same weekend code. Close at the end of the day, America/Chicago, unless an extension is approved.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="projections">
+    <div class="wrap">
+      <p class="kicker">05 · Zero-ad projections</p>
+      <h2>From zero, with no ad runway.</h2>
+      <p>All figures below are estimates. Baseline is organic consistency and the standing MEMBER25 mix used in earlier planning (about 70% full price / 30% MEMBER25 on a 16×20, about $231 sales and $165 profit per order). Coupon &amp; consistency is a modest organic lift with heavier code use, planned at about $200 sales and $135 profit per order — a blend of the proposed 15% code and MEMBER25. Ad spend is $0 in every month. Etsy, Amazon prints, and B2B cash are $0 in this window. Television packs are treated as $0 cash: a free week is a trial, pack price is unapproved, and the Fire TV listing is in live testing.</p>
+
+      <div class="metrics">
+        <div class="metric">
+          <p class="kicker">Q4 2026 · both paths</p>
+          <b>$0</b>
+          <p>Primary estimate. Checkout is not in production today. If it ships, December may add a single discounted order; that is upside, not the base.</p>
+        </div>
+        <div class="metric">
+          <p class="kicker">Q1 2027 baseline · est.</p>
+          <b>$990</b>
+          <p>Profit on 1 / 2 / 3 site orders (Jan–Mar). Sales $1,386. Weekly about $228.</p>
+        </div>
+        <div class="metric">
+          <p class="kicker">Q1 2027 coupon path · est.</p>
+          <b>$1,080</b>
+          <p>Profit on 1 / 3 / 4 site orders at the $135 blend. Sales $1,600. Weekly about $249.</p>
+        </div>
+        <div class="metric emerald">
+          <p class="kicker">$1,500 / week</p>
+          <b>Not in 2026–27</b>
+          <p>Without ads, the planning path does not reach $6,500 a month by November 2027. That goal needs a later paid or subscription chapter.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th class="num">Baseline orders</th>
+              <th class="num">Baseline sales</th>
+              <th class="num">Baseline profit</th>
+              <th class="num">Coupon-path orders</th>
+              <th class="num">Coupon-path sales</th>
+              <th class="num">Coupon-path profit</th>
+              <th class="num">Ads</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Nov 2026</td><td class="num">0</td><td class="num">$0</td><td class="num">$0</td><td class="num">0*</td><td class="num">$0*</td><td class="num">$0*</td><td class="num">$0</td></tr>
+            <tr><td>Dec 2026</td><td class="num">0</td><td class="num">$0</td><td class="num">$0</td><td class="num">0*</td><td class="num">$0*</td><td class="num">$0*</td><td class="num">$0</td></tr>
+            <tr><td>Jan 2027</td><td class="num">1</td><td class="num">$231</td><td class="num">$165</td><td class="num">1</td><td class="num">$200</td><td class="num">$135</td><td class="num">$0</td></tr>
+            <tr><td>Feb 2027</td><td class="num">2</td><td class="num">$462</td><td class="num">$330</td><td class="num">3</td><td class="num">$600</td><td class="num">$405</td><td class="num">$0</td></tr>
+            <tr><td>Mar 2027</td><td class="num">3</td><td class="num">$693</td><td class="num">$495</td><td class="num">4</td><td class="num">$800</td><td class="num">$540</td><td class="num">$0</td></tr>
+            <tr><td>Q4 2026</td><td class="num">0</td><td class="num">$0</td><td class="num">$0</td><td class="num">0</td><td class="num">$0</td><td class="num">$0</td><td class="num">$0</td></tr>
+            <tr><td>Q1 2027</td><td class="num">6</td><td class="num">$1,386</td><td class="num">$990</td><td class="num">8</td><td class="num">$1,600</td><td class="num">$1,080</td><td class="num">$0</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">*Upside only, if checkout ships and QA passes by 26 November: November weekend 0–2 discounted 16×20 orders ($0–about $425 sales, $0–about $297 profit). A mid case of one 15% order is $212.50 sales and $148.54 profit. December, if live, might add one more organic order. These are not in the primary line.</p>
+
+      <div class="chart">
+        <p class="kicker">Chart · estimate</p>
+        <h3>Monthly profit, Q4 2026 and Q1 2027</h3>
+        <p class="cap">Solid line is baseline. Dashed line is the coupon path. Both assume checkout is in production by January. November and December sit at zero on the primary estimate.</p>
+        <svg class="plot" viewBox="0 0 1000 300" role="img" aria-label="Monthly profit baseline versus coupon path">
+          <rect width="1000" height="300" fill="#faf8f4"/>
+          <g stroke="#d8cbbd" stroke-width="1">
+            <line x1="80" y1="40" x2="960" y2="40"/>
+            <line x1="80" y1="120" x2="960" y2="120"/>
+            <line x1="80" y1="200" x2="960" y2="200"/>
+            <line x1="80" y1="250" x2="960" y2="250"/>
+          </g>
+          <g fill="#5e4c3e" font-family="IBM Plex Mono, monospace" font-size="11">
+            <text x="74" y="44" text-anchor="end">$600</text>
+            <text x="74" y="124" text-anchor="end">$400</text>
+            <text x="74" y="204" text-anchor="end">$200</text>
+            <text x="74" y="254" text-anchor="end">$0</text>
+          </g>
+          <!-- months at x 160, 320, 480, 640, 800; y = 250 - profit/600*210 -->
+          <!-- baseline: 0,0,165,330,495 → 250, 250, 192.25, 134.5, 76.75 -->
+          <polyline fill="none" stroke="#16382f" stroke-width="2.5"
+            points="160,250 320,250 480,192 640,135 800,77"/>
+          <g fill="#16382f">
+            <circle cx="160" cy="250" r="4"/><circle cx="320" cy="250" r="4"/>
+            <circle cx="480" cy="192" r="4"/><circle cx="640" cy="135" r="4"/>
+            <circle cx="800" cy="77" r="4"/>
+          </g>
+          <!-- coupon: 0,0,135,405,540 → 250, 250, 202.75, 108.25, 61 -->
+          <polyline fill="none" stroke="#8a5a2e" stroke-width="2" stroke-dasharray="6 5"
+            points="160,250 320,250 480,203 640,108 800,61"/>
+          <g fill="#8a5a2e">
+            <circle cx="160" cy="250" r="3.5"/><circle cx="320" cy="250" r="3.5"/>
+            <circle cx="480" cy="203" r="3.5"/><circle cx="640" cy="108" r="3.5"/>
+            <circle cx="800" cy="61" r="3.5"/>
+          </g>
+          <g fill="#5e4c3e" font-family="IBM Plex Mono, monospace" font-size="10" text-anchor="middle">
+            <text x="160" y="278">NOV</text>
+            <text x="320" y="278">DEC</text>
+            <text x="480" y="278">JAN</text>
+            <text x="640" y="278">FEB</text>
+            <text x="800" y="278">MAR</text>
+          </g>
+        </svg>
+        <div class="legend">
+          <span><i style="background:#16382f"></i>Baseline profit (estimate)</span>
+          <span><i style="background:#8a5a2e"></i>Coupon &amp; consistency (estimate, dashed)</span>
+        </div>
+      </div>
+
+      <h3 style="margin-top:40px">Prospective outlook, Q2–Q4 2027</h3>
+      <p>Still zero ads, still estimates, still starting from a thin Q1. A gentle organic cadence might reach on the order of six to ten site orders a month by November 2027 if posting stays consistent and checkout stays healthy — roughly $1,000–$1,650 in monthly profit, or about $230–$380 a week, well short of $1,500 a week. Adobe’s roughly 2× daily-spend concentration in Cyber Week can be illustrated on a November 2027 month in that range (for example $1,400 becoming about $1,630 with a holiday lift), but it cannot create 2026 sales from zero, and it is an overall-ecommerce pattern, not a wall-art rate. A full BFCM 2027 is the first weekend in which FRAIMOUS could reasonably meet the market with live checkout, an approved code, and at least one public television storefront. The $1,500-a-week goal remains a later chapter: paid acquisition after a yes, a public TV catalog at an approved price, or a subscription build.</p>
+    </div>
+  </section>
+
+  <section class="section band" id="risks">
+    <div class="wrap">
+      <p class="kicker">06 · Risks and blockers</p>
+      <h2>What stands in the way.</h2>
+      <div class="grid-3">
+        <div class="card">
+          <p class="kicker">Binding</p>
+          <h3>Checkout is on staging</h3>
+          <p>Four fixes need a yes to ship, then a QA recheck. If they stay on staging, BFCM week stays at $0, codes or no codes.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Structural</p>
+          <h3>No site subscriptions</h3>
+          <p>A free week of membership on fraimous.com is not possible by 26 November. That offer belongs on the television app, or after a later Stripe subscription build.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Demand</p>
+          <h3>No ads, unknown traffic</h3>
+          <p>Codes do not create visitors. Traffic, email-list size, and social reach are not measured in this report. Volume is therefore conservative and labeled as an estimate.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Channels</p>
+          <h3>Amazon hold, no Etsy</h3>
+          <p>Amazon prints remain on hold. There is no Etsy shop and no Etsy plan. Neither is in the 2026 weekend number.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Television</p>
+          <h3>Fire TV testing, Samsung waits</h3>
+          <p>Pack price is an unapproved placeholder. A free week can be tested; it should not be forecast as cash. Samsung is not a 2026 BFCM storefront unless a yes was already given in time for review — it has not been.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Margin</p>
+          <h3>Deep cuts and stacking</h3>
+          <p>One code per order. Do not put the 46% Snow Globe code on the main site. Exclude extra-large canvas from percent-off codes. MEMBER25 already gives members 25% — a 15% public code stays beneath it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="next">
+    <div class="wrap">
+      <p class="kicker">07 · Next steps</p>
+      <h2>Three yes-or-no decisions.</h2>
+      <p>This report does not launch codes, change fraimous.com, send email, or submit any store listing.</p>
+      <div class="grid-3">
+        <div class="card">
+          <p class="kicker">Decision 1</p>
+          <h3>Ship the four checkout fixes?</h3>
+          <p>If yes, they go to production and get a QA recheck immediately. If no, plan for a $0 weekend and revisit after the holiday.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Decision 2</p>
+          <h3>Approve a 15% weekend code?</h3>
+          <p>One or two new hard-coded percent-off codes, proposed as FRAME15 for 27–30 November, excluded from extra-large canvas, one per order. Name and rate can change. MEMBER25 stays. The Snow Globe code stays on Snow Globe.</p>
+        </div>
+        <div class="card">
+          <p class="kicker">Decision 3</p>
+          <h3>A free week on Fire TV?</h3>
+          <p>A free pack or a free-week unlock in Live App Testing only. Samsung remains a separate yes, with no expectation of a 27 November store listing.</p>
+        </div>
+      </div>
+      <p class="note" style="margin-top:36px">Assumptions: zero recorded sales and traffic as of 10 November 2026; ads remain off; profit is retail minus Printful, shipping, and assumed Stripe (2.9% + $0.30); weekly figures are monthly × 12 ÷ 52; the $1,500 / week goal equals $6,500 a month; television pack revenue is omitted while price is a placeholder and offers are free; Q1 volume is a planning estimate, not a forecast from analytics.</p>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="wrap">
+      <img class="wordmark" src="assets/img/wordmark-ink.png" alt="FRAIMOUS" style="height:18px;margin-bottom:18px" />
+      <p>Prepared 10 November 2026, America/Chicago. Plan only. Estimates are labeled. FRAIMOUS had no sales in BFCM 2025 against which to index.</p>
+      <hr class="rule" />
+      <p class="kicker" style="margin-bottom:12px">Sources</p>
+      <ol class="sources">
+        <li>Adobe, Cyber Monday recap, 2 Dec 2025. <a href="https://news.adobe.com/news/downloads/pdfs/2025/12/120225-adobe-cyber-monday-recap.pdf">PDF</a> — BF $11.8B, CM $14.25B, Cyber Week $44.2B, furniture $1.8B / ~19% off, TVs 22% off on CM, 1 Nov–1 Dec $137.4B.</li>
+        <li>Adobe, Holiday shopping season 2025, 7 Jan 2026. <a href="https://news.adobe.com/news/downloads/pdfs/2026/01/010726-holiday-shopping-season-2025.pdf">PDF</a> — season $257.8B, furniture $31.1B, TVs 24.3% off, holiday décor +285% versus October pre-season.</li>
+        <li>Adobe Analytics as reported by <a href="https://chainstoreage.com/ai-mobile-discounts-help-drive-online-black-friday-sales-higher">Chain Store Age</a> and <a href="https://gamesbeat.com/black-friday-online-sales-finals-11-8b-spent-up-9-1-adobe/">GamesBeat</a> — BF TV sales +1,740% and holiday décor +890% versus average October 2025 days; TVs ~24% off on BF. Not in the official Adobe PDFs above.</li>
+        <li>Salesforce, 5 Dec 2025. <a href="https://www.salesforce.com/news/press-releases/2025/12/05/cyber-week-ai-agents-sales/">Press release</a> — global Cyber Week $336.6B, U.S. $79.6B; U.S. CM $13.6B (differs from Adobe).</li>
+        <li>Shopify, BFCM 2025. <a href="https://www.shopify.com/news/bfcm-data-2025">$14.6B</a>; 2024 comparison <a href="https://2025.shopifyholidayretail.com/country-content/global">$11.5B</a>.</li>
+        <li>Etsy, Q4 and FY 2025 results. <a href="https://investors.etsy.com/news-events/press-releases/detail/218/etsy-inc-reports-fourth-quarter-and-full-year-2025-results">Investor release</a>. Cyber Specials 66% of GMS from on-sale listings, 24 Nov–2 Dec 2025: <a href="https://community.etsy.com/forum/announcements-290/topic/join-etsys-cyber-sale-190228/">Etsy community</a>.</li>
+        <li>Desenio, interim report Q4 2025. <a href="https://storage.mfn.se/cc0995cd-ba1c-4426-a0c5-6ca38c39de6b/desenio-interim-report-q4-2025.pdf">PDF</a>.</li>
+        <li>HIRI / YipitData, BFCM 2024 only. <a href="https://www.hiri.org/blog/home-improvement-retail-trends-for-black-friday-cyber-monday">Home-improvement retail trends</a>.</li>
+        <li>FRAIMOUS unit economics: November 2026 margin tables (Printful + shipping + assumed Stripe). Codes as hard-coded on fraimous.com: MEMBER25, 5N0W84LL3FFCT.</li>
+      </ol>
+    </div>
+  </footer>
+</body>
+</html>
